@@ -1,0 +1,62 @@
+﻿<Window x:Class="RegistroUsuario.UI.Registros.Registro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroUsuario.UI.Registros"
+        mc:Ignorable="d"
+        Title="Registro de Usuario" Height="230" Width="579" Icon="/UI/Registros/icono.icon.png" Background="#FF68D7D9">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextID" HorizontalAlignment="Left" Margin="69,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Alias" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextAlias" HorizontalAlignment="Left" Margin="69,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top"/>
+        <Label Content="Clave " HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Confirmar Clave" HorizontalAlignment="Left" Margin="162,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="Costo x Hora" HorizontalAlignment="Left" Margin="386,104,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextCosto" HorizontalAlignment="Left" Margin="470,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83"/>
+        <TextBox x:Name="TextNombre" HorizontalAlignment="Left" Margin="69,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="237"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="433,52,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem x:Name="ComboBoxItemAdministrador" Content="Administrador" Selected="selecAdministrador"/>
+            <ComboBoxItem x:Name="ComboBoxItemUsuario" Content="Usuario" Selected="SeleUsuario"/>
+        </ComboBox>
+        <Label Content="Nivel" HorizontalAlignment="Left" Margin="391,50,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckBoxActivo" Content="Activo" HorizontalAlignment="Left" Margin="485,28,0,0" VerticalAlignment="Top" Click="Activo"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="315,77,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextEmail" HorizontalAlignment="Left" Margin="361,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="192"/>
+        <Button HorizontalAlignment="Left" Margin="162,26,0,0" VerticalAlignment="Top" Width="26" Click="BtnBuscar">
+            <Image Height="16" Width="21" Source="/UI/Registros/buscar.png"  />
+
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="144,143,0,0" VerticalAlignment="Top" Height="43" Width="77" Click="BtnNuevo" BorderThickness="1,1,1,1">
+            <StackPanel Orientation="Vertical" Width="74" VerticalAlignment="Center" Height="39" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center">
+                <Image Height="22" Width="32" HorizontalAlignment="Stretch" Margin="0,3,0,0" Source="/UI/Registros/nuevo.png" />
+                <Label Content="Nuevo" RenderTransformOrigin="0.52,0.338" Height="23" Width="62" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,-7,0,0" />
+
+
+            </StackPanel>
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="241,143,0,0" VerticalAlignment="Top" Height="43" Width="77" Click="BtnGuardar">
+            <StackPanel Orientation="Vertical" Width="74" Height="39" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+                <Image  Height="18" Width="32" Margin="0,3,0,0" Source="/UI/Registros/disco-flexible (2).png"/>
+
+
+                <Label Content="Guardar" HorizontalAlignment="Center" Margin="0,-4,0,0" />
+            </StackPanel>
+
+        </Button>
+        <Button HorizontalAlignment="Left" Margin="336,144,0,0" VerticalAlignment="Top" Height="42" Width="77" Click="BtnEliminar">
+            <StackPanel Orientation="Vertical" Width="74" Height="39">
+                <Image  Height="22" Width="32" Margin="0,2,0,0" Source="/UI/Registros/vcsconflicting_93497.png" />
+                <Label Content="Eliminar" HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,-7,0,0" />
+            </StackPanel>
+        </Button>
+        <PasswordBox x:Name="TextClave" HorizontalAlignment="Left" Margin="69,108,0,0" VerticalAlignment="Top" Width="86"/>
+        <PasswordBox x:Name="TextConfClave" HorizontalAlignment="Left" Margin="261,108,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

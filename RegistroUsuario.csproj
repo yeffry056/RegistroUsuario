@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<StartWorkingDirectory>$(MSBuildProjectDirectory)</StartWorkingDirectory>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="registro %281%29.png" />
+    <None Remove="UI\Registros\buscar.png" />
+    <None Remove="UI\Registros\disco-flexible %282%29.png" />
+    <None Remove="UI\Registros\icono.icon.png" />
+    <None Remove="UI\Registros\nuevo.png" />
+    <None Remove="UI\Registros\vcsconflicting_93497.png" />
+    <None Remove="x1AJ8Tp.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DATA\" />
+    <Folder Include="Resources\" />
+    <Folder Include="UI\Consultas\" />
+    <Folder Include="UI\Reportes\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="5.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="registro (1).png" />
+    <Resource Include="UI\Registros\buscar.png" />
+    <Resource Include="UI\Registros\disco-flexible (2).png" />
+    <Resource Include="UI\Registros\icono.icon.png" />
+    <Resource Include="UI\Registros\nuevo.png" />
+    <Resource Include="UI\Registros\vcsconflicting_93497.png" />
+    <Resource Include="x1AJ8Tp.jpg" />
+  </ItemGroup>
+
+</Project>

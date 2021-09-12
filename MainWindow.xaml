@@ -1,0 +1,31 @@
+﻿<Window x:Class="RegistroUsuario.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistroUsuario"
+        mc:Ignorable="d"
+        Title="Registros" Height="450" Width="800" Icon="/registro (1).png">
+    <Grid>
+        <StackPanel>
+            <Menu Height="18">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="UsuarioMenuIte" Header="Registro Usuario" Click="UsuarioMenuItem" />
+                </MenuItem>
+
+
+
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name="ConsultaUsuarioMenuIte" Header="Consulta Usuario" Click="ConsultaUsuariosMenuItem" />
+                </MenuItem>
+
+
+
+                <MenuItem Header="Ayuda" Click="BtnHerramientas">
+                    <MenuItem x:Name="Herramientas" Header="Herramientas" />
+                </MenuItem>
+            </Menu>
+            <Image Height="416" Width="803"  Stretch="Fill" Source="/x1AJ8Tp.jpg"/>
+        </StackPanel>
+    </Grid>
+</Window>
